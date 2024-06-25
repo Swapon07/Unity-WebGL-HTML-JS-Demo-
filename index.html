@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2022 GSX-R1000R</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="&lt;model-viewer&gt; template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="assets/TemplateData/style.css" />
+    <!-- Bootstrap setup for responsive -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- first coloum  -->
+        <div class="col-md-3">
+          <!-- Buttons added here -->
+          <button class="btn" onclick="displayImage('moduleViewer')">
+            <img src="Images/icon_360.png" alt="AR Icon" width="50" />
+          </button>
+          <button class="btn" onclick="displayImage('image2')">
+            <img src="Images/Image-2.png" alt="Image 2" width="50" />
+          </button>
+          <button class="btn" onclick="displayImage('image3')">
+            <img src="Images/Image-3.png" alt="Image 3" width="50" />
+          </button>
+        </div>
+
+        <!-- Sketchfab Viewer Section -->
+        <div class="col-md-5">
+          <div id="unity-container" class="unity-desktop">
+            <canvas
+              id="unity-canvas"
+              width="850"
+              height="400"
+              tabindex="-1"
+            ></canvas>
+            <div id="unity-loading-bar">
+              <div id="unity-logo"></div>
+              <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+              </div>
+            </div>
+            <div id="unity-warning"></div>
+            <div id="unity-footer">
+              <button
+                id="compareButton"
+                type="button"
+                class="btn btn-primary"
+                onclick="ActiveCompareMode()"
+              >
+                COMPARE
+              </button>
+              <!-- <div id="unity-webgl-logo"></div> -->
+              <div id="unity-fullscreen-button"></div>
+              <!-- <div id="unity-build-title">WebGL</div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- // Product and Add btn  section-->
+        <div class="col-md-2">
+          <div class="product-details">
+            <h1>Suzuki Gixxer</h1>
+            <div class="rating">
+              <!-- Rating stars -->
+              <span class="star">&#9733;</span>
+              <!-- Price -->
+              <p class="price h4 ml-2">4.6 Rating</p>
+            </div>
+            <p id="totalPrice" class="price h2">BDT 2,64,950.00</p>
+            <div class="colors" id="color-controls">
+              <p class="price h3">colors</p>
+              <button data-color="#ff0000" class="color-option red"></button>
+              <button data-color="#0000ff" class="color-option blue"></button>
+              <button data-color="#00ff00" class="color-option green"></button>
+            </div>
+
+            <div class="quantity">
+              <p class="price h2">Quantity</p>
+              <button
+                class="btn btn-sm btn-secondary"
+                onclick="decrementQuantity()"
+              >
+                -
+              </button>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="transparent-input"
+              />
+              <button
+                class="btn btn-sm btn-secondary"
+                onclick="incrementQuantity()"
+              >
+                +
+              </button>
+            </div>
+            <button class="add-card btn btn-primary mt-2 max-auto">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Loads <model-viewer> for browsers: -->
+
+    <!-- <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"
+    ></script> -->
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

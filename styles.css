@@ -1,0 +1,120 @@
+:not(:defined) > * {
+  display: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0077ff;
+}
+
+.col-md-2
+{
+
+  margin: 30px;
+  padding-top: 5%;
+  margin-top: 1%;
+  display: flex;
+}
+.col-md-3,
+.btn {
+  padding-top: 5%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.product-details
+{
+ max-width: 750px;
+
+}
+.container-fluid,
+.row,
+.col {
+  height: 720px;
+  background-color: #0f161e;
+}
+
+.rating {
+  display: inline-flex; /* or inline-block */
+  align-items: center; /* Align items vertically */
+}
+
+.product-details,
+h1,
+h2 {
+  color: #ffffff;
+}
+
+.star {
+  color: gold;
+  align-content: center;
+  font-size: 30px;
+}
+.price,
+.colors {
+  padding-top: 10%;
+}
+
+/* Define colors for each color option */
+
+.color-option {
+  width: 40px; /* Adjust button size as needed */
+  height: 40px; /* Adjust button size as needed */
+
+  border-radius: 50%; /* Makes the button circular */
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.color-option.red {
+  background-color: #ff0000;
+}
+
+.color-option.blue {
+  background-color: #0000ff;
+}
+
+.color-option.green {
+  background-color: #00ff00;
+}
+
+.transparent-input {
+  background-color: transparent;
+  border: 1px solid #cccccc00; /* Add a border for better visibility */
+  text-align: center;
+  color: #ffffff;
+}
+.add-card {
+  text-align: center; /* Center align content horizontally */
+  margin-left: 10%;
+}
+
+
+
+
+/* 
+.sketchfabViewer {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+  width: 100%;
+  height: 480px; /* Set height as needed */
+  overflow: hidden;
+  margin-top: 10%;
+} */
+
+#api-frame {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  border: none;
+}

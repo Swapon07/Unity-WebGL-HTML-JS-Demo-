@@ -1,0 +1,16 @@
+<model-viewer src="motorcycle.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" min-camera-orbit="-180deg auto auto" max-camera-orbit="180deg auto auto">
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.006449603308157462m 0.041588650380646595m 0.01740533702709546m" data-normal="-0.6536111585983826m 0.7566942366229948m -0.014362646595356765m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Engine</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-0.031292821597150564m 0.0966988046880774m 0.0063893327992509165m" data-normal="-0.26643669383085106m 0.9622830733650785m 0.0549797680564819m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Oil Tank</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
